@@ -1,44 +1,64 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# <center>react-saga-blueprint</center>
 
-## Available Scripts
+<center>
+This is boilerplate for react ( with Typescript )<br/>
+react, redux-saga and typescript<br/>
+redux, react-router, typesafe-actions with additional settings
+</center>
 
-In the project directory, you can run:
+### First. Clone my git repogitory
+```
+$> git clone https://github.com/ondaa/react-saga-blueprint.git
+```
 
-### `yarn start`
+### Second. Install module
+```
+// move to project folder
+$> cd react-saga-blueprint
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+// install module
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+// use npm
+$> npm install 
 
-### `yarn test`
+// use yarn
+$> yarn install
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Third. Start react
+```
+// use npm
+$> npm run start
 
-### `yarn build`
+// use yarn
+$> yarn start
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Checking tree nodes in src folder
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- <b>components (blank)</b>
+- <b>containers</b>
+  - <i>HomeContainer.tsx (count dispatch example)</i>
+- <b>pages</b>
+  - <i>About.tsx (sub router switch example)</i>
+  - <i>Home.tsx</i>
+- <b>store</b>
+  - <b>mobules</b>
+    - <b>base</b> (example base action, state, saga action)
+      - <i>index.ts (example state & action)</i>
+      - <i>actions.ts (example action)</i>
+      - <i>saga.ts (example saga action)</i>
+    - <b>saga</b>
+      - baseSaga.ts ( base saga effect put, call, takeEvery)
+      - index.ts (combine all saga)
+  - <i>configure.ts (createReducer)</i>
+  - <i>index.ts (createStore)</i>
+- <i>App.tsx (main router switch example)</i>
+- <i>index.tsx (all context component apply)</i>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Notes
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Use `npx create-react-app [project-name] --template typescript`
+- You can run scripts for `eject`
+- You can change all the code
+- Only very simple settings and example
