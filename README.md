@@ -49,8 +49,8 @@ $> yarn start
       - <i>actions.ts (example action)</i>
       - <i>saga.ts (example saga action)</i>
     - <b>saga</b>
-      - baseSaga.ts ( base saga effect put, call, takeEvery)
-      - index.ts (combine all saga)
+      - <i>baseSaga.ts ( base saga effect put, call, takeEvery)</i>
+      - <i>index.ts (combine all saga)</i>
   - <i>configure.ts (createReducer)</i>
   - <i>index.ts (createStore)</i>
 - <i>App.tsx (main router switch example)</i>
@@ -62,3 +62,7 @@ $> yarn start
 - You can run scripts for `eject`
 - You can change all the code
 - Only very simple settings and example
+
+## Updated
+
+- 2020.03.01 install and use react-helmet
